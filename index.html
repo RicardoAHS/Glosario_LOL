@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glosario: términos de League of Legends</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+        }
+        .glosario-container {
+            max-width: 800px;
+            width: 100%;
+            margin: 40px 20px;
+            padding: 20px;
+            background-color: #1e1e1e;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 24px;
+            color: #ffffff;
+        }
+        .buscador {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .buscador input {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            font-size: 16px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #333;
+            color: #ffffff;
+        }
+        .terms-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .term {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #333;
+            border-radius: 4px;
+            background-color: #2c2c2c;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        .term:hover {
+            background-color: #3a3a3a;
+        }
+        .term-description {
+            display: none;
+            margin-top: 5px;
+            font-size: 14px;
+            color: #cccccc;
+        }
+        .term.active .term-description {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="glosario-container">
+    <div class="header">
+        <h1>Glosario: términos de League of Legends</h1>
+    </div>
+    <div class="buscador">
+        <input type="text" id="search" placeholder="Buscar...">
+    </div>
+    <ul class="terms-list">
+        <li class="term">
+            ADC
+            <div class="term-description">Ataque de Daño de Carry: El campeón cuyo objetivo principal es hacer daño físico.</div>
+        </li>
+        <li class="term">
+            AFK
+            <div class="term-description">Away From Keyboard: Se refiere a un jugador que está ausente del teclado.</div>
+        </li>
+        <li class="term">
+            AP
+            <div class="term-description">Poder de Habilidad: Atributo que incrementa el daño de las habilidades mágicas.</div>
+        </li>
+        <li class="term">
+            Baron
+            <div class="term-description">Barón Nashor: El monstruo más poderoso del juego que otorga un gran beneficio al equipo que lo derrota.</div>
+        </li>
+        <li class="term">
+            Bot
+            <div class="term-description">La línea inferior del mapa, donde usualmente se encuentra el ADC y el soporte.</div>
+        </li>
+        <li class="term">
+            CC
+            <div class="term-description">Crowd Control: Habilidades que limitan los movimientos o acciones de los campeones enemigos.</div>
+        </li>
+        <li class="term">
+            CD
+            <div class="term-description">Cooldown: Tiempo de espera necesario para volver a usar una habilidad.</div>
+        </li>
+        <li class="term">
+            CS
+            <div class="term-description">Creep Score: La cantidad de súbditos asesinados por un jugador.</div>
+        </li>
+        <li class="term">
+            Dive
+            <div class="term-description">Atacar a un enemigo debajo de su torre.</div>
+        </li>
+        <li class="term">
+            Drake
+            <div class="term-description">Dragón: Un monstruo neutral que otorga beneficios al equipo que lo derrota.</div>
+        </li>
+        <li class="term">
+            Engage
+            <div class="term-description">Iniciar una pelea con el equipo enemigo.</div>
+        </li>
+        <li class="term">
+            Farm
+            <div class="term-description">La acción de matar súbditos para obtener oro.</div>
+        </li>
+        <li class="term">
+            Gank
+            <div class="term-description">Emboscar a un enemigo con la ayuda de un compañero.</div>
+        </li>
+        <li class="term">
+            Jungler
+            <div class="term-description">El campeón que se dedica a matar monstruos en la jungla y asistir a las líneas.</div>
+        </li>
+        <li class="term">
+            KS
+            <div class="term-description">Kill Steal: Robar la muerte de un enemigo que otro compañero estaba a punto de conseguir.</div>
+        </li>
+        <li class="term">
+            Mid
+            <div class="term-description">La línea central del mapa.</div>
+        </li>
+        <li class="term">
+            MR
+            <div class="term-description">Resistencia Mágica: Atributo que reduce el daño mágico recibido.</div>
+        </li>
+        <li class="term">
+            Nexus
+            <div class="term-description">El objetivo final del juego, destruir el Nexus del equipo enemigo para ganar.</div>
+        </li>
+        <li class="term">
+            Objective
+            <div class="term-description">Objetivo: Elementos importantes del mapa, como torres, dragones y Barón Nashor.</div>
+        </li>
+        <li class="term">
+            Ping
+            <div class="term-description">Una señal visual o sonora en el mapa para comunicarse con el equipo.</div>
+        </li>
+        <li class="term">
+            Split Push
+            <div class="term-description">Estrategia donde un campeón empuja una línea solo mientras su equipo distrae al enemigo.</div>
+        </li>
+        <li class="term">
+            Top
+            <div class="term-description">La línea superior del mapa.</div>
+        </li>
+        <li class="term">
+            TP
+            <div class="term-description">Teleport: Hechizo de invocador que permite teletransportarse a una ubicación aliada.</div>
+        </li>
+        <li class="term">
+            Wards
+            <div class="term-description">Objetos que otorgan visión en el mapa.</div>
+        </li>
+        <!-- Añadir más términos aquí -->
+    </ul>
+</div>
+
+<script>
+    document.getElementById('search').addEventListener('input', function() {
+        const searchTerm = this.value.toLowerCase();
+        const terms = document.querySelectorAll('.term');
+
+        terms.forEach(term => {
+            const text = term.textContent.toLowerCase();
+            if (text.includes(searchTerm)) {
+                term.style.display = '';
+            } else {
+                term.style.display = 'none';
+            }
+        });
+    });
+
+    document.querySelectorAll('.term').forEach(term => {
+        term.addEventListener('click', () => {
+            term.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
